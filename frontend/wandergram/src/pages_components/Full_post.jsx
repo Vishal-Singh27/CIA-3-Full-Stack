@@ -57,7 +57,7 @@ export default function FullPost(props) {
     }
     else {
         return (
-            <div className="h-screen text-center">Data could not be loaded</div>
+            <div className="h-screen text-center">Post is loading....</div>
         )
     }
 }

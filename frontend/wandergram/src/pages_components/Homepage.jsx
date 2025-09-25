@@ -45,7 +45,7 @@ export const Homepage = () => { // Removed async
     }
     else {
       return (
-        <div className='h-screen text-center'>Feed couldnt be loaded</div>
+        <div className='h-screen text-center'>Feed is loading....</div>
       );
     } 
     
