@@ -9,7 +9,7 @@ export const Navbar = () => {
   const {user, isLoggedIn, logout} = useContext(AuthContext);
   return (<div className="navbar bg-base-100 shadow-sm">
   <div className="flex-1">
-    <a className="btn btn-ghost text-xl">Wandergram</a>
+    <a className="btn btn-ghost text-xl"><Link to="/"> Wandergram </Link></a>
   </div>
   {isLoggedIn ? (<div className='button mr-4 '><Link to={"/"}>Following</Link></div>): null}
   {isLoggedIn ? (<div className='button mr-2'><Link to={"/add_post"}>Add Post</Link></div>): null}

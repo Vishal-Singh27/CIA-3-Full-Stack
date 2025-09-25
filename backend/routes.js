@@ -19,6 +19,7 @@ import Get_user_id from "./route_controllers/Get_user_id.js";
 import Delete_user from "./route_controllers/Delete_user.js";
 import Delete_post from "./route_controllers/Delete_post.js";
 import Add_follower from "./route_controllers/Add_follower.js";
+import Get_post_by_id from "./route_controllers/Get_post_by_id.js"
 
 const router = express.Router();
 
@@ -39,13 +40,14 @@ router.get("/users/:name", Get_user);
 router.get("/user_id/:id", Get_user_by_id);
 router.post("/post/add", Add_post);
 router.post("/posts/", Get_post);
+router.post("/post/:id", Get_post);
 router.post("/fyp/", Get_fyp);
 router.post("/post/add", Add_post);
+router.get("/post/:id", Get_post_by_id);
 // router.post("/locations/add", Add_location);
 // router.get("/locations/:id", Get_location);
 // router.get("/locations/delete/:id", Delete_location);
 // router.get("/locations/update_rating/:id", Update_location_rating);
 // router.get("/locations/", Show_all_locations);
-router.get("/posts/", Show_all_posts);
 
 export default router
